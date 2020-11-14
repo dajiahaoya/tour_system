@@ -9,6 +9,11 @@ Vue.config.productionTip = false
 import './assets/css/reset.css'
 import './assets/css/iconfont.css'
 
+//swiper组件
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
+
 //js
 import FastClick from 'fastclick'
 FastClick.attach(document.body);

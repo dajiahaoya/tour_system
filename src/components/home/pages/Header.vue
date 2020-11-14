@@ -20,7 +20,9 @@
 
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
+@import '~css/var.styl'
+    
     .header{
         width: 100%;
         line-height: .88rem;
