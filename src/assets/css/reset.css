@@ -59,3 +59,18 @@ html{
 a{
 	text-decoration: none;
 }
+.border-top:before{
+	content: " ";
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	border-top: 1px solid #e0e0e0;
+}
+.border-right:before{
+	content: " ";
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	border-right: 1px solid #e0e0e0;
+	left: 50%;
+}

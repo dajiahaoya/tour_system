@@ -9,7 +9,7 @@
                     <p>{{page.title}}</p>
                 </div>
             </swiper-slide>
-            
+            <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
         
     </div>
@@ -18,7 +18,11 @@
 export default{
     data(){
         return{
-            swiperOptions:{},
+            swiperOptions:{
+                pagination: {
+                    el: '.swiper-pagination'
+                }
+            },
             iconsList:[
                 {
                     id:'01',
