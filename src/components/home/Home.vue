@@ -1,9 +1,13 @@
 <template>
-    <div>
+    <div class="home">
         <home-header></home-header>
         <home-swiper></home-swiper>
         <home-icons></home-icons>
         <home-location></home-location>
+        <home-activity></home-activity>
+        <home-hot></home-hot>
+        <home-like></home-like>
+        <home-vacation></home-vacation>
     </div>
 </template>
 <script>
@@ -11,13 +15,25 @@ import HomeHeader from './pages/Header'
 import HomeSwiper from './pages/Swiper'
 import HomeIcons from './pages/Icons'
 import HomeLocation from './pages/Location'
+import HomeActivity from './pages/Activity'
+import HomeHot from './pages/Hot'
+import HomeLike from './pages/Like'
+import HomeVacation from './pages/Vacation'
 export default{
     components:{
         HomeHeader, 
         HomeSwiper,
         HomeIcons,
-        HomeLocation
+        HomeLocation,
+        HomeActivity,
+        HomeHot,
+        HomeLike,
+        HomeVacation
     }
 }
 </script>
-<style></style>
+<style>
+    .home{
+        background: #f5f5f5;
+    }
+</style>

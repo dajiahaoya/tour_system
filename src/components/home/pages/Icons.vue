@@ -4,14 +4,13 @@
             <swiper-slide  
             v-for="(item,key) in page" 
             :key="key">
-                <div class="icons-item" v-for="page in item" :key = "page.id">
+                <div class="icons-item" v-for="page in item" :key="page.id">
                     <img :src="page.imgUrl" alt="">
                     <p>{{page.title}}</p>
                 </div>
             </swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
-        
+        </swiper> 
     </div>
 </template>
 <script>
@@ -26,53 +25,53 @@ export default{
             iconsList:[
                 {
                     id:'01',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
+                    imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/158387fe5376294f3776d01358d6b73b.png',
                     title:'景点门票'
                 },
                 {
                     id:'02',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
-                    title:'必游榜单'
+                    imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png',
+                    title:'城市观光'
                 },
                 {
                     id:'03',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
-                    title:'夏日玩水'
+                    imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/b7a5e6b1774eda4fc9e32588f1d00c94.png',
+                    title:'踏青赏花'
                 },
                 {
                     id:'04',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
-                    title:'主题乐园'
+                    imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/aba25fb84648c130561afa5398d3552a.png',
+                    title:'长隆动物园'
                 },
                 {
                     id:'05',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
+                    imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/5ffcd4a916f764f678263b27c1e2e00c.png',
                     title:'动植物园'
                 },
                 {
                     id:'06',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
-                    title:'故宫'
+                    imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/c4c5c620f20535ff358788a508c20921.png',
+                    title:'主题公园'
                 },
                 {
                     id:'07',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
+                    imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/69e8b07cb2d438c5530aebd4c8e3abd3.png',
                     title:'一日游'
                 },
                 {
                     id:'08',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
-                    title:'公园'
+                    imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/557ba25df01d7dbf1419b095a11d1319.png',
+                    title:'泡温泉'
                 },
                 {
                     id:'09',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
-                    title:'游乐园'
+                    imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/a40ee278d67000f2a29d2e20f6a029b3.png',
+                    title:'自然风光'
                 },
                 {
                     id:'10',
-                    imgUrl:'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg',
-                    title:'全部玩乐'
+                    imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/59bc59a3c38261e9a3f2f991a9ce0d21.png',
+                    title:'广州必游'
                 }
             ]
         }
@@ -90,16 +89,18 @@ export default{
     }
 }
 </script>
-<style scoped>
+<style scoped lang="stylus">
+    @import '~css/common.styl';
     .icons{
         width: 100%;
         overflow: hidden;
+        background: #fff;
     }
     .icons-item{
         width: 25%;
-        padding-bottom: 25%;
-        height: 0;
+        height: 25%;
         float: left;
+        margin-bottom: .2rem;
     }
     .icons-item img{
         width: 1.1rem;
@@ -113,5 +114,9 @@ export default{
         font-size: .28rem;
         text-align: center;
         color: #212121;
+        textOverflow();
+    }
+    .swiper-pagination{
+        bottom: 0;
     }
 </style>

@@ -14,6 +14,7 @@
 .location{
     position: relative;
     display: flex;
+    background: #fff;
 }
 .location .location-item{
     flex: 1;
