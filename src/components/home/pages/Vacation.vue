@@ -4,7 +4,7 @@
             周末去哪
         </div>
             <ul>
-                <li class="vacation-item" v-for="item in VacationList">
+                <li class="vacation-item" v-for="item in vacationList">
                     <div class="vacation-img">
                         <img :src="item.imgSrc" alt="">
                     </div>    
@@ -19,28 +19,10 @@
 </template>
 <script>
 export default{
+    props:['vacationList'],
     data () {
         return{
-            VacationList:[
-                {
-                    id:'01',
-                    imgSrc:'http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg',
-                    title:'清远周边逛',
-                    content:'人人都有一双发现美的眼睛，身边的事物最熟悉不过，那你可曾发现了被人遗漏的美？'
-                },
-                {
-                    id:'02',
-                    imgSrc:'http://img1.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg',
-                    title:'浮在海上的绿洲',
-                    content:'南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊!'
-                },
-                {
-                    id:'03',
-                    imgSrc:'http://img1.qunarzz.com/sight/source/1602/9c/39c5ce9ff58609.jpg_r_640x214_efb90102.jpg',
-                    title:'粤西温泉',
-                    content:'自驾粤西，这里有最全最心仪的温泉池，环境优美，舒舒服服的泡个热汤，远离繁忙的工作'
-                }
-            ]
+            
         }
     }
 }

@@ -1,0 +1,188 @@
+{
+  "data": [{
+      "city": "北京",
+      "swiperList": [{
+          "id": "01",
+          "imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1179273312,1128108760&fm=26&gp=0.jpg"
+        },
+        {
+          "id": "02",
+          "imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3963799090,258929742&fm=26&gp=0.jpg"
+        },
+        {
+          "id": "03",
+          "imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1479628401,160371731&fm=26&gp=0.jpg"
+        },
+        {
+          "id": "04",
+          "imgUrl": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2890167039,1473458738&fm=26&gp=0.jpg"
+        },
+        {
+          "id": "05",
+          "imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1386247554,3443797009&fm=26&gp=0.jpg"
+        }
+      ],
+      "iconsList": [{
+          "id": "01",
+          "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/158387fe5376294f3776d01358d6b73b.png",
+          "title": "景点门票"
+        },
+        {
+          "id": "02",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
+          "title": "城市观光"
+        },
+        {
+          "id": "03",
+          "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/b7a5e6b1774eda4fc9e32588f1d00c94.png",
+          "title": "踏青赏花"
+        },
+        {
+          "id": "04",
+          "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/aba25fb84648c130561afa5398d3552a.png",
+          "title": "长隆动物园"
+        },
+        {
+          "id": "05",
+          "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/5ffcd4a916f764f678263b27c1e2e00c.png",
+          "title": "动植物园"
+        },
+        {
+          "id": "06",
+          "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/c4c5c620f20535ff358788a508c20921.png",
+          "title": "主题公园"
+        },
+        {
+          "id": "07",
+          "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/69e8b07cb2d438c5530aebd4c8e3abd3.png",
+          "title": "一日游"
+        },
+        {
+          "id": "08",
+          "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/557ba25df01d7dbf1419b095a11d1319.png",
+          "title": "泡温泉"
+        },
+        {
+          "id": "09",
+          "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/a40ee278d67000f2a29d2e20f6a029b3.png",
+          "title": "自然风光"
+        },
+        {
+          "id": "10",
+          "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/59bc59a3c38261e9a3f2f991a9ce0d21.png",
+          "title": "广州必游"
+        }
+      ],
+      "hotList": [{
+          "id": "01",
+          "imgSrc": "http://img1.qunarzz.com/sight/p0/2011/e6/e6568888096dd6f3a3.water.jpg_250x250_3e2b5647.jpg",
+          "title": "长隆欢乐世界",
+          "mark": "222"
+        },
+        {
+          "id": "02",
+          "imgSrc": "http://img1.qunarzz.com/sight/p0/2011/f0/f050f346cfd6dc62a3.water.jpg_250x250_92b836b3.jpg",
+          "title": "长隆野生动物世界",
+          "mark": "351"
+        },
+        {
+          "id": "03",
+          "imgSrc": "http://img1.qunarzz.com/sight/p0/1603/1c/1c67791edbe2677b90.img.jpg_250x250_8f1dcbbd.jpg",
+          "title": "珠江夜景",
+          "mark": "111"
+        },
+        {
+          "id": "04",
+          "imgSrc": "http://img1.qunarzz.com/sight/p0/1603/20/208ed6bc971a41cf90.img.jpg_250x250_d149a062.jpg",
+          "title": "宝墨园",
+          "mark": "222"
+        },
+        {
+          "id": "05",
+          "imgSrc": "http://img1.qunarzz.com/sight/p0/201309/06/a03726324b885c8bc8d65eac.jpg_250x250_468addc5.jpg",
+          "title": "广州塔",
+          "mark": "145"
+        }
+      ],
+      "likeList": [{
+          "id": "01",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/2011/e6/e6568888096dd6f3a3.water.jpg_200x200_3a5cf6a1.jpg",
+          "title": "金海湖风景区",
+          "address": "平谷区",
+          "num": "1314",
+          "price": "1452"
+        },
+        {
+          "id": "02",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/2011/f0/f050f346cfd6dc62a3.water.jpg_200x200_847c20bd.jpg",
+          "title": "长隆野生动物世界",
+          "address": "广州长隆",
+          "num": "74556",
+          "price": "285"
+        },
+        {
+          "id": "03",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/1603/20/208ed6bc971a41cf90.img.jpg_200x200_50c7ca89.jpg",
+          "title": "宝墨园",
+          "address": "番禺区",
+          "num": "6416",
+          "price": "28"
+        },
+        {
+          "id": "04",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/1603/1c/1c67791edbe2677b90.img.jpg_200x200_ff903759.jpg",
+          "title": "珠江夜游",
+          "address": "天河区",
+          "num": "13416",
+          "price": "24"
+        },
+        {
+          "id": "05",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/201309/06/a03726324b885c8bc8d65eac.jpg_200x200_109f2c42.jpg",
+          "title": "广州塔",
+          "address": "海珠区",
+          "num": "646464",
+          "price": "75"
+        },
+        {
+          "id": "06",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/1907/90/903428cd6de6a2c1a3.img.jpg_200x200_72b53792.jpg",
+          "title": "广州融创雪世界",
+          "address": "花都区",
+          "num": "44512",
+          "price": "190"
+        },
+        {
+          "id": "07",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/2011/e6/e6568888096dd6f3a3.water.jpg_200x200_3a5cf6a1.jpg",
+          "title": "长隆欢乐世界",
+          "address": "广州长隆",
+          "num": "764641",
+          "price": "230"
+        }
+      ],
+      "vacationList": [{
+          "id": "01",
+          "imgSrc": "http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg",
+          "title": "清远周边逛",
+          "content": "人人都有一双发现美的眼睛，身边的事物最熟悉不过，那你可曾发现了被人遗漏的美？"
+        },
+        {
+          "id": "02",
+          "imgSrc": "http://img1.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg",
+          "title": "浮在海上的绿洲",
+          "content": "南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊!"
+        },
+        {
+          "id": "03",
+          "imgSrc": "http://img1.qunarzz.com/sight/source/1602/9c/39c5ce9ff58609.jpg_r_640x214_efb90102.jpg",
+          "title": "粤西温泉",
+          "content": "自驾粤西，这里有最全最心仪的温泉池，环境优美，舒舒服服的泡个热汤，远离繁忙的工作"
+        }
+      ]
+    },
+    {
+      "city": "上海"
+    }
+  ]
+}

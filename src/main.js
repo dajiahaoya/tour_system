@@ -14,6 +14,10 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
+//axios
+import axios from 'axios'
+Vue.prototype.$http = axios
+
 //js
 import FastClick from 'fastclick'
 FastClick.attach(document.body);

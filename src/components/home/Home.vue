@@ -1,13 +1,13 @@
 <template>
     <div class="home">
         <home-header></home-header>
-        <home-swiper></home-swiper>
-        <home-icons></home-icons>
+        <home-swiper :swiperList='swiperList'></home-swiper>
+        <home-icons :iconsList='iconsList'></home-icons>
         <home-location></home-location>
         <home-activity></home-activity>
-        <home-hot></home-hot>
-        <home-like></home-like>
-        <home-vacation></home-vacation>
+        <home-hot :hotList='hotList'></home-hot>
+        <home-like :likeList='likeList'></home-like>
+        <home-vacation :vacationList='vacationList'></home-vacation>
     </div>
 </template>
 <script>
@@ -29,6 +29,40 @@ export default{
         HomeHot,
         HomeLike,
         HomeVacation
+    },
+    data(){
+        return{
+            swiperList:[],
+            iconsList:[],
+            hotList:[],
+            likeList:[],
+            vacationList:[]
+        }
+    },
+    mounted(){
+        // 两种请求方法
+        // this.$http({
+        //     url: "http://localhost:8080/static/mock/dataHome.json",
+        //     method: "get",
+        //     params: {}
+        //     }).then(res => {
+        //         const data = res.data.data[0];
+        //         this.swiperList = data.swiperList;
+        //         this.iconsList = data.iconsList;
+        //         this.hotList = data.hotList;
+        //         this.likeList = data.likeList;
+        //         this.vacationList = data.vacationList;
+        // })
+        this.$http.get("/api/dataHome.json")
+        .then((res)=>{
+            // console.log(res);
+            const data = res.data.data[0];
+            this.swiperList = data.swiperList;
+            this.iconsList = data.iconsList;
+            this.hotList = data.hotList;
+            this.likeList = data.LikeList;
+            this.vacationList = data.vacationList;
+        })
     }
 }
 </script>
