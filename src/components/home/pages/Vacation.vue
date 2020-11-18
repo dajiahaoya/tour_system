@@ -37,6 +37,7 @@ export default{
     margin-bottom: .1rem;
     background: #fff;
     font-size: .28rem;
+    overflow: hidden;
 }
 .vacation-item img{
     width: 100%;

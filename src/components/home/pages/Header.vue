@@ -32,6 +32,7 @@
         color: #fff;
         font-size: .36rem;
         display: flex;
+        overflow: hidden;
     }
     .header-left{
         width: .4rem;

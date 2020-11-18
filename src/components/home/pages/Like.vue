@@ -42,6 +42,7 @@ export default{
     font-size: .28rem;
     background: #fff;
     padding: 0 .2rem;
+    overflow: hidden;
 }
 .like-top{
     padding: .2rem 0;

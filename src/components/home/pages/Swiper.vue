@@ -41,6 +41,7 @@ export default {
         background: #ccc;
         height: 0;
         padding-bottom: 4rem;
+        overflow: hidden;
     }
     .header-swiper img{
         width: 100%;

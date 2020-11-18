@@ -17,6 +17,7 @@
         position: relative;
         display: flex;
         background: #fff;
+        overflow: hidden;
     }
     .activity .activity-item{
         flex: 1;

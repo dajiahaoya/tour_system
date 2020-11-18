@@ -15,6 +15,7 @@
     position: relative;
     display: flex;
     background: #fff;
+    overflow: hidden;
 }
 .location .location-item{
     flex: 1;
