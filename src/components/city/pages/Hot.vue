@@ -14,6 +14,17 @@
                 北京
             </li>
         </ul>
+        <ul class="hot-list">
+            <li class="hot-item">
+                北京
+            </li>
+            <li class="hot-item">
+                北京
+            </li>
+            <li class="hot-item">
+                北京
+            </li>
+        </ul>
     </div>
 </template>
 <script>
@@ -21,7 +32,7 @@
 </script>
 <style scoped>
 .hot{
-    font-size: .28rem;
+    font-size: .24rem;
     background: #f5f5f5;
 }
 .hot-title{
