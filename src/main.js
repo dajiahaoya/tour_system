@@ -18,6 +18,9 @@ Vue.use(VueAwesomeSwiper, /* { default global options } */)
 import axios from 'axios'
 Vue.prototype.$http = axios
 
+//vuex
+import store from './store'
+
 //js
 import FastClick from 'fastclick'
 FastClick.attach(document.body);
@@ -26,6 +29,7 @@ FastClick.attach(document.body);
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

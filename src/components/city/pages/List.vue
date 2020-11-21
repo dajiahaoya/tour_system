@@ -7,7 +7,7 @@
           热门城市
         </div>
         <ul class="hot-list">
-          <li class="hot-item" v-for="item in hotCities" :key="item.id">
+          <li class="hot-item" v-for="item in hotCities" :key="item.id" @click='changeCityName(item.name)'>
             {{item.name}}
           </li>
         </ul>
@@ -30,7 +30,7 @@
             {{key}}
           </div>
           <ul class="list-msg">
-            <li class="list-item" v-for="item in val" :key="item.id">
+            <li class="list-item" v-for="item in val" :key="item.id" @click='changeCityName(item.name)'>
               {{item.name}}
             </li>
           </ul>
@@ -42,6 +42,7 @@
 
 </template>
 <script>
+  import {mapMutations} from 'vuex'
   import BScroll from 'better-scroll'
   export default {
     props: ['hotCities', 'cities'],
@@ -65,27 +66,34 @@
         this.scroll.scrollToElement(this.$refs[sortName][0]);
         // console.log(this.$refs[sortName][0]);
         // console.log(this.$refs);
-      }
-    },
+      },
+      changeCityName(cityName) {
+        this.changeCity(cityName);
+        this.$router.push('/');
+      },
+      ...mapMutations(['changeCity'])
+    }
   }
 
 </script>
 <style scoped lang="stylus">
   @import '~css/common.styl';
-  .container{
-	position: absolute;
-	overflow:hidden;
-	left:0;
-	right:0;
-	bottom:0;
-	top:.88rem;
-}
-.main{
+
+  .container {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: .88rem;
+  }
+
+  .main {
     height: 250rem;
-}
+  }
 
   .hot-title {
-      
+
     font-size: .24rem;
     background: #f5f5f5;
     padding: .2rem;
@@ -110,10 +118,10 @@
   }
 
   .hot-item {
+    position: relative;
     float: left;
     width: 33.33333%;
     text-align: center;
-    background: #fff;
     height: .9rem;
     line-height: .9rem;
     border-bottom: .02rem solid #ddd;
@@ -176,7 +184,7 @@
     content: " ";
     position: absolute;
     height: 100%;
-    width: 25%;
+    width: 0;
     left: 75%;
     border-left: .02rem solid #ddd;
   }
@@ -184,6 +192,7 @@
   .list-item {
     width: 25%;
     float: left;
+    position: relative;
     text-align: center;
     line-height: .9rem;
     border-bottom: .02rem solid #ddd;
