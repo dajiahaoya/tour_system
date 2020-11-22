@@ -28,6 +28,12 @@ export default{
     computed:{
         page (){
             let pages = [];
+            // console.log(this.iconsList);
+            // for((item,index) in iconsList){
+            //     let idx = Math.floor(index/8);
+            //     if(!pages[idx])pages[idx] = [];
+            //     pages[idx].push(item)
+            // }
             this.iconsList.forEach((item,index)=>{
                 let idx = Math.floor(index/8);
                 if(!pages[idx])pages[idx] = [];

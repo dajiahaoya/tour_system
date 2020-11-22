@@ -2,13 +2,18 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
+//本地存儲
+let defaultCity = '上海';
+defaultCity = localStorage.city;
 
 const state = {
-    city:"上海"
+    city:defaultCity
 }
+
 const mutations = {
     changeCity(state,cityName){
         state.city = cityName;
+        localStorage.city = cityName;
     }
 }
 export default new Vuex.Store({
