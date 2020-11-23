@@ -5,7 +5,7 @@
             猜你喜欢
         </div>
         <ul>
-            <li class="like-item border-bottom" v-for="item in likeList">
+            <li class="like-item border-bottom" v-for="item in likeList" @click="toDetails">
                 <div class="like-img">
                     <img :src="item.imgUrl" alt="">
                 </div>
@@ -32,6 +32,11 @@ export default{
     data(){
         return{
             
+        }
+    },
+    methods:{
+        toDetails(){
+            this.$router.push("/detail");
         }
     }
 }

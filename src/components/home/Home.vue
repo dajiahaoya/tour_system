@@ -37,7 +37,8 @@
         iconsList: [],
         hotList: [],
         likeList: [],
-        vacationList: []
+        vacationList: [],
+        changeCity:''
       }
     },
     computed: {
@@ -52,8 +53,8 @@
             // for((item, index) in data){
                 
             // }
+            // console.log(typeof data);
             data.forEach((item, index) => {
-                //   console.log(data);
               if (item.city == this.city) {
                 // const data = res.data.data[0];
                 this.swiperList = item.swiperList;
@@ -80,7 +81,14 @@
       //         this.likeList = data.likeList;
       //         this.vacationList = data.vacationList;
       // })
+      this.changeCity = this.city
       this.getHttp()
+    },
+    activated(){
+        if(this.city!=this.changeCity){
+            this.getHttp();
+            this.city = this.changeCity;
+        }
     }
   }
 
